@@ -28,8 +28,8 @@ PreferredSizeWidget header() {
         margin: const EdgeInsets.only(right: 16),
         child: ClipRRect(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
-          child: Image.network(
-            "https://github.com/vickttorugo.png",
+          child: Image.asset(
+            "assets/images/author.png",
             width: 40,
             height: 40,
             fit: BoxFit.cover,

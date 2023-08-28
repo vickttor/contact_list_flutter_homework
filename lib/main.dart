@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        canvasColor: Colors.transparent, // Bottom navigator bgcolor
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(primaryColor)),
         useMaterial3: true,
       ),
