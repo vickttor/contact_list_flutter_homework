@@ -64,6 +64,47 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.red,
+        currentIndex: 0,
+        selectedItemColor: Colors.grey.shade800,
+        unselectedItemColor: Colors.grey.shade500,
+        showSelectedLabels: false,
+        elevation: 0,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: "Chat",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.phone_rounded),
+            label: "Phone",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(null),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.supervised_user_circle_rounded,
+            ),
+            label: "users",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "settings",
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton.small(
+        onPressed: () {},
+        backgroundColor: const Color(primaryColor),
+        child: const Icon(
+          Icons.add_rounded,
+          color: Color(whiteColor),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
