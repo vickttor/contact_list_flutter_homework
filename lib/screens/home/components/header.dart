@@ -10,26 +10,28 @@ PreferredSizeWidget header() {
       color: Color(whiteColor),
     ),
     // Title Centered
-    title: const Text(
-      "MENSAGENS",
+    title: Text(
+      "Mensagens".toUpperCase(),
     ),
     centerTitle: true,
     titleTextStyle: const TextStyle(
       color: Color(whiteColor),
       fontSize: 18,
-      fontFamily: "ADLaM Display",
+      fontFamily: "Inter",
+      fontWeight: FontWeight.w300,
+      letterSpacing: 3.0,
     ),
     elevation: 0,
     // Right Profile Photo
     actions: [
       Container(
-        margin: EdgeInsets.only(right: 16),
+        margin: const EdgeInsets.only(right: 16),
         child: ClipRRect(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
           child: Image.network(
             "https://github.com/vickttorugo.png",
-            width: 32,
-            height: 32,
+            width: 40,
+            height: 40,
             fit: BoxFit.cover,
           ),
         ),

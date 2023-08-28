@@ -1,3 +1,4 @@
+import "package:contacts/constants.dart";
 import "package:contacts/screens/home/components/header.dart";
 import "package:flutter/material.dart";
 
@@ -8,11 +9,60 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: header(),
-      body: Container(
-        padding: const EdgeInsets.all(16),
-        child: const Center(
-          child: Text("Hello World"),
-        ),
+      backgroundColor: const Color(whiteColor),
+      body: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.only(
+              top: 24,
+              right: 16,
+              left: 16,
+              bottom: 36,
+            ),
+            decoration: const BoxDecoration(
+              color: Color(primaryColor),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(24),
+                bottomRight: Radius.circular(24),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  spreadRadius: 4.0,
+                  blurRadius: 10.0,
+                  color: Color(secondaryColor),
+                )
+              ],
+            ),
+            child: const TextField(
+              autocorrect: true,
+              keyboardType: TextInputType.text,
+              cursorColor: Color(primaryColor),
+              style: TextStyle(
+                color: Color(whiteColor),
+              ),
+              decoration: InputDecoration(
+                alignLabelWithHint: true,
+                labelStyle: TextStyle(color: Color(whiteColor)),
+                floatingLabelStyle: TextStyle(color: Color(whiteColor)),
+                prefixIcon: Icon(Icons.search),
+                prefixIconColor: Color(whiteColor),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide.none,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
+                ),
+                filled: true,
+                contentPadding: EdgeInsets.all(12),
+                hintText: "Search",
+                hintStyle: TextStyle(color: Color.fromARGB(154, 246, 251, 254)),
+                fillColor: Color(
+                  secondaryColor,
+                ),
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
