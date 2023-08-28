@@ -37,12 +37,12 @@ class MyBottomNavigator extends StatelessWidget {
               elevation: MaterialStateProperty.all(10),
               shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(12),
                 ),
               ),
             ),
             color: const Color(whiteColor),
-            iconSize: 22,
+            iconSize: 24,
             onPressed: () {},
             icon: const Icon(Icons.add_rounded),
           ),

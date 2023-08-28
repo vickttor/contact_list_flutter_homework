@@ -1,7 +1,7 @@
 import 'package:contacts/constants.dart';
 import 'package:flutter/material.dart';
 
-PreferredSizeWidget header() {
+PreferredSizeWidget myHeader() {
   return AppBar(
     backgroundColor: const Color(primaryColor),
     // Left Menu Icon
